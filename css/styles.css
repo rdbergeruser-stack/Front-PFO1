@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Encode Sans', sans-serif; /* [cite: 73, 180] */
+    font-family: 'Encode Sans', sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f9;
@@ -17,7 +17,7 @@ header {
     background-color: #2c3e50;
     color: white;
     text-align: center;
-    padding: 3rem 1rem; /* Unidades relativas [cite: 76, 183] */
+    padding: 3rem 1rem; /* Unidades relativas para responsividad */
 }
 
 nav {
@@ -28,24 +28,28 @@ nav {
 }
 
 nav ul {
-    display: flex; /* [cite: 75] */
+    display: flex; /* Organización con Flexbox */
     justify-content: center;
     list-style: none;
     padding: 1rem;
 }
 
-nav ul li { margin: 0 1.5rem; }
+nav ul li { 
+    margin: 0 1.5rem; 
+}
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s ease; /* [cite: 81] */
+    transition: color 0.3s ease; /* Transición suave */
 }
 
-nav ul li a:hover { color: #3498db; }
+nav ul li a:hover { 
+    color: #3498db; 
+}
 
-/* --- SECCIÓN PRINCIPAL (EL ESTILO QUE TE GUSTÓ) --- */
+/* --- SECCIÓN PRINCIPAL --- */
 main {
     max-width: 1000px;
     margin: 2rem auto;
@@ -55,21 +59,24 @@ main {
 section {
     margin-bottom: 3rem;
     padding: 2.5rem;
-    background: white; /* Tarjeta blanca */
+    background: white; /* Estilo de tarjeta blanca */
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra suave */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra suave para profundidad */
 }
 
 h2 {
     color: #2c3e50;
     margin-bottom: 2rem;
-    border-bottom: 3px solid #3498db; /* Subrayado azul */
+    border-bottom: 3px solid #3498db; /* Subrayado decorativo azul */
     display: inline-block;
     padding-bottom: 5px;
 }
 
 /* --- SOBRE MÍ --- */
-#sobre-mi { text-align: center; }
+#sobre-mi { 
+    text-align: center; 
+}
+
 .img-perfil {
     width: 150px;
     height: 150px;
@@ -81,7 +88,7 @@ h2 {
 
 /* --- PROYECTOS (FLEXBOX) --- */
 .grid-proyectos {
-    display: flex; /* [cite: 181] */
+    display: flex; 
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
@@ -94,10 +101,12 @@ h2 {
     padding: 1.5rem;
     border-radius: 10px;
     text-align: center;
-    transition: transform 0.3s ease; /* [cite: 183] */
+    transition: transform 0.3s ease; /* Animación de interacción */
 }
 
-.tarjeta:hover { transform: translateY(-10px); }
+.tarjeta:hover { 
+    transform: translateY(-10px); /* Efecto de elevación al pasar el mouse */
+}
 
 .tarjeta img {
     width: 100%;
@@ -109,7 +118,7 @@ h2 {
 /* --- TABLAS Y FORMULARIOS --- */
 table {
     width: 100%;
-    border-collapse: collapse; /* [cite: 78, 182] */
+    border-collapse: collapse;
 }
 
 th, td {
@@ -144,9 +153,11 @@ button {
     transition: background 0.3s;
 }
 
-button:hover { background-color: #2980b9; }
+button:hover { 
+    background-color: #2980b9; 
+}
 
-/* --- PELÍCULAS --- */
+/* --- SECCIÓN PELÍCULAS --- */
 .pelicula-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -161,5 +172,27 @@ button:hover { background-color: #2980b9; }
 
 /* --- RESPONSIVIDAD --- */
 @media (max-width: 768px) {
-    nav ul { flex-direction: column; align-items: center; }
+    nav ul { 
+        flex-direction: column; 
+        align-items: center; 
+    }
+}
+
+/* --- AJUSTE PARA ALINEACIÓN DE PELÍCULAS --- */
+.pelicula-list article h3 {
+    min-height: 4.5rem; /* Espacio suficiente para dos líneas */
+    display: flex;
+    align-items: center; /* Centra el texto verticalmente si es una sola línea */
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* También aseguremos que las imágenes tengan el mismo alto para que todo cuadre */
+.pelicula-list article img {
+    width: 100%;
+    height: 350px; /* Altura fija para uniformidad */
+    object-fit: cover; /* Recorta la imagen para que no se deforme */
+    border-radius: 8px;
+    margin-bottom: 1rem;
 }
