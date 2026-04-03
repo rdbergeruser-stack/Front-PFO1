@@ -1,7 +1,7 @@
 # Práctica Formativa Obligatoria 1 - Portafolio Personal
 
 ## Descripción del Proyecto
-Este Trabajo Práctico consiste en el desarrollo de una Landing Page de Portafolio Personal utilizando exclusivamente **HTML5** y **CSS3**. Se enfoca en la aplicación de estructuras semánticas, diseño responsivo mediante Flexbox y la integración de recursos externos como Google Fonts.
+Este Trabajo Práctico consiste en el desarrollo de una Landing Page de Portafolio Personal(persona ficticia) utilizando exclusivamente **HTML5** y **CSS3**. Se enfoca en la aplicación de estructuras semánticas, diseño responsivo mediante Flexbox y la integración de recursos externos como Google Fonts.
 
 * **Estudiante:** Rodrigo Berger
 * **Institución:** IFTS N.° 29
