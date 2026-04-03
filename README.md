@@ -11,7 +11,7 @@ Este Trabajo Práctico consiste en el desarrollo de una Landing Page de Portafol
 
 ## URL del Proyecto Publicado
 Podés visualizar la web en vivo aquí:  
-https://rdbergeruser-stack.github.io/Front-PFO1/
+https://front-pfo-1-five.vercel.app/
 
 ---
 
